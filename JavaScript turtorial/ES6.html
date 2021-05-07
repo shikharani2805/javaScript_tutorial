@@ -1,0 +1,40 @@
+<!-- Let: keyword allows you to declare a variable with block scope. -->
+var x = 10;
+// Here x is 10
+{
+  let x = 2;
+  // Here x is 2
+}
+// Here x is 10
+
+<!-- Const: keyword allows you to declare a constant (a JavaScript variable with a constant value).
+Constants are similar to let variables, except that the value cannot be changed. -->
+var x = 10;
+// Here x is 10
+{
+  const x = 2;
+  // Here x is 2
+}
+// Here x is 10
+
+<!-- Arrow Functions
+Arrow functions allows a short syntax for writing function expressions.
+
+You don't need the function keyword, the return keyword, and the curly brackets. -->
+// ES5
+var x = function(x, y) {
+   return x * y;
+}
+
+// ES6
+const x = (x, y) => x * y;
+
+<!-- The For/Of Loop
+The JavaScript for/of statement loops through the values of an iterable objects.
+for/of lets you loop over data structures that are iterable such as Arrays, Strings, Maps and more. -->
+var cars = ["BMW", "Volvo", "Mini"];
+var x;
+
+for (x of cars) {
+  document.write(x + "<br >");
+}

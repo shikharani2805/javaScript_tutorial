@@ -1,0 +1,1 @@
+document.write("here is the diffrent method to define js")

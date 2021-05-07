@@ -1,0 +1,38 @@
+<!-- •	getter methods are used to access the properties of an object
+•	setter methods are used to change the values of an object -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get and set</title>
+</head>
+<body>
+    <script>
+    var student = {
+        // data property
+        firstName: 'Shikha',
+        // accessor property(getter)
+        get getName() {
+            return this.firstName;
+        }
+    }
+    // accessing getter methods
+    document.write(student.getName); // Monica
+</script>     
+<!--  =====================================================   -->
+<script>
+    var student = {
+    firstName: 'Shikha',
+    //accessor property(setter)
+    set changeName(newName) {
+        this.firstName = newName;
+    }
+}
+console.log(student.firstName);
+// change(set) object property using a setter
+student.changeName = 'neha';
+document.write(student.firstName); 
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- conditional statement -->
+<script>  
+    var a=20;  
+    if(a%2==0){  
+    document.write("a is even number");  
+    }  
+    else{  
+    document.write("a is odd number");  
+    }  
+    </script>  
+<br>
+<!-- switch statement -->
+<p id="demo"></p>
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+<br>
+<!-- while loop -->
+<script>  
+    var i=11;  
+    while (i<=15)  
+    {  
+    document.write(i + "<br/>");  
+    i++;  
+    }  
+</script> 
+<br>
+<!-- do while loop -->
+<script>  
+    var i=21;  
+    do{  
+    document.write(i + "<br/>");  
+    i++;  
+    }while (i<=25);  
+</script>  
+<br>
+<!-- for loop -->
+<script>  
+    for (i=1; i<=5; i++)  
+    {  
+    document.write(i + "<br/>")  
+    }  
+</script>  
+
+</body>
+</html>

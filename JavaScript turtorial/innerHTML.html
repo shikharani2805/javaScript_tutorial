@@ -1,0 +1,29 @@
+<!-- The innerHTML property can be used to write the dynamic html on the html document.
+It is used mostly in the web pages to generate the dynamic html such as registration form, comment form, links etc -->
+
+<!-- dynamically writing the html form inside the div name having the id mylocation. 
+and identifing this position by calling the document.getElementById() method. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHtml</title>
+</head>
+<body>
+    <script type="text/javascript" >  
+        function showcommentform() {  
+        var data="Name:<input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='80'></textarea>"
+        document.getElementById('mylocation').innerHTML=data;  
+        }  
+        
+    </script>  
+        <form name="myForm"> 
+            <input type="button" value="comment" onclick="showcommentform()">  
+            <br><input type='submit' value='Post Comment'>
+        <div id="mylocation"></div>  
+        </form>  
+</body>
+</html>

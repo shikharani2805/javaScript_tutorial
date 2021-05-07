@@ -1,0 +1,31 @@
+<!-- The JavaScript inheritance is a mechanism that allows us to create new classes on the basis of already existing classes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritence</title>
+</head>
+<body>
+    <script>  
+        class Bike  
+        {  
+          constructor()  
+          {  
+            this.company="Honda";  
+          }  
+        }  
+        class Vehicle extends Bike {  
+          constructor(name,price) {  
+           super();  
+            this.name=name;  
+            this.price=price;  
+          }   
+        }  
+        var v = new Vehicle("Shine","70000");  
+        document.writeln(v.company+" "+v.name+" "+v.price);  
+        </script> 
+</body>
+</html>

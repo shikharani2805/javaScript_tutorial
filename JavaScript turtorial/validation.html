@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function validationform(){
+           var x=document.forms["myform"]["fname"].value;
+           if(x==""){
+               alert("name must be filled");
+               return false;
+           }
+       }
+   </script> 
+    <br>
+    <hr>
+    <form name="myform" onsubmit="return validationform()">
+        Name:<input type="text" name="fname">
+        <input type="submit" value="submit">
+    </form>
+    <br>
+    <hr>
+    <script>
+        function validationform2(){
+            var name=document.myform1.name.value;
+            var pass=document.myform1.password.value;
+            if (name == null || name == ""){
+                alert("name cant be blank");
+                return false;
+            }
+            else if(pass.length<8){
+                alert("password must be atleast 8 character long");
+                return false;
+            }
+            else if(isNaN(num)){  
+                document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+                return false;  
+            }
+            else{
+                return true;
+            } 
+        }
+    </script>
+    <form name="myform1" onsubmit="validationform2()">
+        Full Name:<input type="text" name="name">
+        Password:<input type="password" name="password">
+        Number: <input type="text" name="num"><span id="numloc"></span><br/>  
+        <input type="submit" value="register">
+    </form>
+    <br>
+    <hr>
+    <script>  
+        function validateemail()  
+        {  
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf(".");  
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+          alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+          return false;  
+          }  
+        }  
+    </script>   
+    <form name="myform"  method="post" action="#" onsubmit="return validateemail();">  
+        Email: <input type="text" name="email"><br/>  
+          
+        <input type="submit" value="register">  
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generators</title>
+</head>
+<body>
+    <script>
+        function * generate(){
+            console.log("invoked 1st item");
+            yield 1;
+            console.log("invoke 2nd item");
+            yield 2;
+        }
+        let gen=generate();
+        console.log(gen);
+    </script>
+
+    <script>
+        function * abc(){
+            let index=0;
+            while(true){
+                yield index++;
+            }
+        }
+        let f=abc();
+        console.log(f.next());
+        console.log(f.next());
+        console.log(f.next());
+    </script>
+</body>
+</html>
