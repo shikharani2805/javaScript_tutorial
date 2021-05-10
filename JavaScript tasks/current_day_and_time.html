@@ -1,0 +1,29 @@
+<!-- Write a JavaScript program to display the current day and time -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Current day and time</title>
+</head>
+  
+<body>
+    <script>
+        var currentTime = new Date();
+        var currentday = currentTime.getDay();
+     
+        var weekday = ['Sunday', 'Monday', 'Tuesday',
+            'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        document.write("<b>" + "Today is : " + weekday[currentday] + "</b>");
+        document.write("<br/>");
+        document.write("<br/>");
+        
+        var hours = currentTime.getHours()
+        var minutes = currentTime.getMinutes()
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        document.write("<b>" + "Current time is :" + hours  + ":  " + minutes + ":  " + currentTime.getMilliseconds() + "   " + ampm + "</b>")
+    </script>
+</body>
+  
+</html>

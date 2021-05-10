@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program to rotate the string 'teqfocus' in right direction by 
+periodically removing one letter from the end of the string and attaching it to the front. -->
+
+<html>
+<head>
+</head>
+<body>
+<h1 id = 'rotate'></h1>
+<script>
+    var myVar = setInterval(myFunction, 1000);
+
+    var char = 'Teqforce';
+    var newArray = char.split('');   //split a string into an array of substrings, and returns the new array
+
+    function myFunction() {
+        var charr = newArray.pop();
+        var newWord = newArray.unshift(charr);
+        var theWord = newArray.join('');
+        console.log(theWord);
+        document.getElementById('rotate').innerHTML = theWord;
+    }
+  </script>
+  
+ 
+</body>
+</html>
