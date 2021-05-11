@@ -1,0 +1,23 @@
+<!-- Write a JavaScript program to create a new string adding "Py" in front of a given string. 
+If the given string begins with "Py" then return the original string. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add py string</title>
+</head>
+<body>
+    <script>
+    function add_py(str){
+        if (str.substring(0, 2) == 'Py' || str.substring(0, 2) == 'py')
+        {
+            return str;
+        }
+        return "Py" + str;  
+    }
+
+document.write(add_py("Pycharm")+"<br>");
+document.write(add_py("charm"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program to check from two given integers, whether one is positive and another one is negative. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>integer</title>
+</head>
+<body>
+    <script>
+        function integer_p_n(p, n)
+            {
+            if ((p<0 && n>0) || p>0 && n<0) 
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+            }
+        document.write(integer_p_n(12,-5) + "<br>");   
+        document.write(integer_p_n(-12,-5)); 
+    </script>
+    
+</body>
+</html>

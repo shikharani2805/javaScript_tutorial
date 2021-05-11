@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program to create a new string from a given string changing the position of first and last characters. 
+The string length must be greater than or equal to 1. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change first last position</title>
+</head>
+<body>
+   <script>
+        function change_position(str1) 
+            {
+                if (str1.length <= 1)
+            {
+                return str1;
+            }
+            midstr2 = str1.substring(1, str1.length - 1);
+            
+            last_char = str1.charAt(str1.length - 1);
+            first_char = str1.charAt(0);
+            
+            return (last_char + midstr2 + first_char);
+            }
+    document.write(change_position('s') +"<br>");
+    document.write(change_position('shikha'));
+   </script> 
+</body>
+</html>

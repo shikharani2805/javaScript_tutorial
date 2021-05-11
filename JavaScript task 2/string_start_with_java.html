@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program to check whether a string starts with 'Java' and false otherwise. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>string start with java</title>
+</head>
+<body>
+    <script>
+
+    function check_java(str){
+        frant_str = str.slice(0,4);
+        if (frant_str == 'java' || frant_str == 'Java'){
+            return true;
+        }
+        return false;
+    }
+    document.write(check_java("abc")+"<br>");
+    document.write(check_java("java")+"<br>");
+    document.write(check_java("Javascript")+"<br>");
+    document.write(check_java("xncjkdfhvjkc"));
+
+    </script>
+</body>
+</html>
+
