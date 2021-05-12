@@ -1,0 +1,26 @@
+
+<!-- Write a JavaScript program to create new string with first 3 characters are in lower case from a given string. 
+If the string length is less than 3 convert all the characters in upper case. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lower upper</title>
+</head>
+<body>
+    <script>
+        function char3_lower(str) {
+            if (str.length < 3) {
+                return str.toUpperCase();
+            }
+            char3 = str.substring(0, 3)
+            first3_char = char3.toLowerCase();
+            remain_char = str.substring(3, str.length);  
+            return first3_char + remain_char;
+            }
+        document.write(char3_lower("SHIKHA")+"<br>");
+        document.write(char3_lower("sh"));
+    </script>
+</body>
+</html>

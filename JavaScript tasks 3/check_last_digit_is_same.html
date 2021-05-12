@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program to check whether the last digit of the three given positive integers is same. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>last digit of the three given integers is same</title>
+</head>
+<body>
+    <script>
+        function same_last_digit(num1, num2, num3){
+            l1 = num1 % 10
+            l2 = num2 % 10
+            l3 = num3 % 10
+            if ((num1 > 0) && num2 > 0 && num3 > 0){
+                return (l1 == l2 && l2 == l3 && l1 == l3);
+            }
+            else{
+                return false;
+            }
+        }
+    document.write(same_last_digit(222, 22, 12)+"<br>");
+    document.write(same_last_digit(34, 23, 28)+"<br>");
+    document.write(same_last_digit(77, -177, 777)+"<br>");
+    </script>
+</body>
+</html>

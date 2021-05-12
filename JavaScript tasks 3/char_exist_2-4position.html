@@ -1,0 +1,31 @@
+<!-- Write a program to check whether a specified character exists within the 2nd to 4th position in a given string. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>character exists within the 2nd to 4th position</title>
+</head>
+<body>
+   <script>
+
+        function position_2_4(str,char){
+           char2 = str.slice(1,2);
+           char3 = str.slice(2,3);
+           char4 = str.slice(3,4);
+           if (char2 == char || char3 == char || char4 == char){
+               return true;
+           }
+           else{
+               return false;
+           }
+       }
+       document.write(position_2_4("python","p")+"<br>");
+       document.write(position_2_4("python","y")+"<br>");
+       document.write(position_2_4("python","t")+"<br>");
+       document.write(position_2_4("python","h")+"<br>");
+       document.write(position_2_4("python","o")+"<br>");
+       document.write(position_2_4("python","n")+"<br>");
+   </script> 
+</body>
+</html>

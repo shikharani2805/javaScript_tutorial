@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program to find a value which is nearest 
+    to 100 from two different given integer values. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nearest to 100 from two diff integwr</title>
+</head>
+<body>
+   <script>
+       function nearest100(num1,num2){
+           sub_num1 = 100-num1;
+           sub_num2 = 100-num2;
+           if (sub_num1 > sub_num2){
+               return(num2 + " is neareast to 100");
+           }
+           else{
+               return(num1 + " is nearest to 100");
+           }
+       }
+       document.write(nearest100(89,43)+ "<br>")
+       document.write(nearest100(73,89)+ "<br>")
+   </script> 
+</body>
+</html>

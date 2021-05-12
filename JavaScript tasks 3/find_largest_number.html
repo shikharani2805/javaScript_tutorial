@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program to find the largest of three given integers.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find the largest of three given integers</title>
+</head>
+<body>
+   <script>
+    function largest_number(a,b,c){
+        if (a>=b && a>=c){
+            return (a + " is largest number");
+        }
+        else if (b>=a && b>=c){
+            return (b + " is largest number");
+        }
+        else{
+            return (c + " is largest number");
+        }
+    }
+    document.write(largest_number(3,2,9)+"<br>")
+    document.write(largest_number(5,12,9)+"<br>")
+    document.write(largest_number(13,2,9))
+   </script> 
+</body>
+</html>
